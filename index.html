@@ -197,6 +197,18 @@
   </div>
 </section> -->
 
+<section class="section">
+  <div class="columns is-centered">
+    <p>
+      <img align="middle" src="./salesforce.png" alt="this slowpoke moves" width="100" />
+      <img align="middle" src="./stanford.png" alt="this slowpoke moves" width="100" />
+    </p>
+
+  </div>
+
+
+</section>
+
 
 <!-- <section class="hero is-light is-small">
   <div class="hero-body">
@@ -268,7 +280,7 @@
 
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full-width">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <!-- <p>
@@ -299,7 +311,7 @@
             fidelity.
           </p> -->
           <p>
-            The recognition capabilities of current state-of-the-art 3D models are limited by datasets with a small number of annotated data and a pre-defined set of categories. In its 2D counterpart, recent advances have shown that similar problems can be significantly alleviated by employing knowledge from other modalities, such as language. Inspired by this, leveraging multimodal information for 3D modality could be promising to improve 3D understanding under the restricted data regime, but this line of research is not well studied. Therefore, we introduce ULIP to learn a unified representation of image, text, and 3D point cloud by pre-training with object triplets from the three modalities. To overcome the shortage of training triplets, ULIP leverages a pre-trained vision-language model that has already learned a common visual and textual space by training with massive image-text pairs. Then, ULIP learns a 3D representation space aligned with the common image-text space, using a small number of automatically synthesized triplets. ULIP is agnostic to 3D backbone networks and can easily be integrated into any 3D architecture. Experiments show that ULIP effectively improves the performance of multiple recent 3D backbones by simply pre-training them on ShapeNet55 using our framework, achieving state-of-the-art performance in both standard 3D classification and zero-shot 3D classification on ModelNet40 and ScanObjectNN. ULIP also improves the performance of PointMLP by around 3\% in 3D classification on ScanObjectNN, and outperforms PointCLIP by 28.8\% on top-1 accuracy for zero-shot 3D classification on ModelNet40. Our code and pre-trained models will be released.
+            The recognition capabilities of current state-of-the-art 3D models are limited by datasets with a small number of annotated data and a pre-defined set of categories. In its 2D counterpart, recent advances have shown that similar problems can be significantly alleviated by employing knowledge from other modalities, such as language. Inspired by this, leveraging multimodal information for 3D modality could be promising to improve 3D understanding under the restricted data regime, but this line of research is not well studied. Therefore, we introduce ULIP to learn a unified representation of image, text, and 3D point cloud by pre-training with object triplets from the three modalities. To overcome the shortage of training triplets, ULIP leverages a pre-trained vision-language model that has already learned a common visual and textual space by training with massive image-text pairs. Then, ULIP learns a 3D representation space aligned with the common image-text space, using a small number of automatically synthesized triplets. ULIP is agnostic to 3D backbone networks and can easily be integrated into any 3D architecture. Experiments show that ULIP effectively improves the performance of multiple recent 3D backbones by simply pre-training them on ShapeNet55 using our framework, achieving state-of-the-art performance in both standard 3D classification and zero-shot 3D classification on ModelNet40 and ScanObjectNN. ULIP also improves the performance of PointMLP by around 3% in 3D classification on ScanObjectNN, and outperforms PointCLIP by 28.8% on top-1 accuracy for zero-shot 3D classification on ModelNet40. Our code and pre-trained models will be released.
           </p>
         </div>
       </div>
@@ -311,7 +323,7 @@
     <div class="column is-full-width">
       <!-- <h2 class="title is-3">Animation</h2> -->
       <div class="publication-animation">
-        <img src="./ULIP_website_rotation.gif" alt="this slowpoke moves" height="100%" />
+        <img src="./pipeline_cad.gif" alt="this slowpoke moves" height="100%" />
 
       </div>
     </div>
@@ -327,7 +339,7 @@
     <!-- Concurrent Work. -->
     <div class="columns is-centered">
       <div class="column is-centered has-text-centered">
-        <h2 class="title is-3">Idea</h2>
+        <h2 class="title is-3">Key Idea</h2>
         <br><br>
         <div class="content is-centered">
           <p>
@@ -336,7 +348,7 @@
         </div>
         <br><br>
 
-        <h2 class="title is-3">Pipeline</h2>
+        <h2 class="title is-3">Overall Pipeline</h2>
         <div class="content is-centered">
           <p>
             <img src="./figure2.gif" width="100%" />
