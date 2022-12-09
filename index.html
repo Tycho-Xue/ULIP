@@ -98,19 +98,19 @@
               <a href="https://scholar.google.com/citations?user=tAUdLM0AAAAJ&hl=en">Chen Xing</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=XOJE8OEAAAAJ&hl=en">Roberto Martin Martin</a><sup>1</sup>,
+              <a href="https://scholar.google.com/citations?user=XOJE8OEAAAAJ&hl=en">Roberto Martín-Martín</a><sup>1,2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=2efgcS0AAAAJ&hl=en">Jiajun Wu</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=2efgcS0AAAAJ&hl=en">Jiajun Wu</a><sup>3</sup>,
             </span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=vaSdahkAAAAJ&hl=en">Caiming Xiong</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=sgBB2sUAAAAJ&hl=en">Ran Xu</a><sup>1</sup>
+              <a href="https://scholar.google.com/citations?user=sgBB2sUAAAAJ&hl=en">Ran Xu</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=hqNhUCYAAAAJ&hl=en">Juan Carlos Niebles</a><sup>1</sup>
+              <a href="https://scholar.google.com/citations?user=hqNhUCYAAAAJ&hl=en">Juan Carlos Niebles</a><sup>1</sup>,
             </span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=ImpbxLsAAAAJ&hl=en">Silvio Savarese</a><sup>1</sup>
@@ -119,7 +119,8 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Salesforce Research,</span>
-            <span class="author-block"><sup>2</sup>Stanford University</span>
+            <span class="author-block"><sup>2</sup>UT Austin,</span>
+            <span class="author-block"><sup>3</sup>Stanford University</span>
           </div>
 
           <div class="column has-text-centered">
@@ -203,6 +204,7 @@
       <p>
         <center>
         <img align="middle" src="./salesforce.png" alt="this slowpoke moves" width="100" />
+        <img align="middle" src="./UT_round.png" alt="this slowpoke moves" width="100" />
         <img align="middle" src="./stanford.png" alt="this slowpoke moves" width="100" />
         </center>
       </p>
@@ -327,7 +329,7 @@
     <div class="column is-full-width">
       <!-- <h2 class="title is-3">Animation</h2> -->
       <div class="publication-animation">
-        <img src="./pipeline_cad.gif" alt="this slowpoke moves" height="100%" />
+        <img src="./pipeline_8s_timing.gif" alt="this slowpoke moves" height="100%" />
 
       </div>
     </div>
@@ -344,18 +346,23 @@
     <div class="columns is-centered">
       <div class="column is-centered has-text-centered">
         <h2 class="title is-3">Key Idea</h2>
-        <br><br>
         <div class="content is-centered">
           <p>
             <img src="./figure1.gif" width="50%" />
+            <figcaption>
+              ULIP improves 3D understanding by aligning features from image, text and point cloud in the same space. To reduce the demand of 3D data, ULIP leverages image and text encoders that are pre-trained with large-scale image-text pairs, and aligns 3D representation to the pre-aligned image-text feature space using a small scale of training triplets.
+            </figcaption>
           </p>
         </div>
-        <br><br>
+        <br><br><br>
 
         <h2 class="title is-3">Overall Pipeline</h2>
         <div class="content is-centered">
           <p>
-            <img src="./figure2.gif" width="100%" />
+            <img src="./figure2_resize.gif" width="100%" />
+            <figcaption>
+              The inputs of multimodal pre-training (<strong>Left</strong>) are a batch of objects represented as triplets (image, text, point cloud). Image and text features are extracted from a pre-trained (frozen) vision and language model such as CLIP, and 3D features are extracted from a 3D encoder. Contrastive losses are applied to align the 3D feature of an object to its image and text features during pre-training. The pre-trained 3D encoders are further fine-tuned in downstream tasks, including standard 3D classification (<strong>Top Right</strong>) and zero-shot 3D classification (<strong>Bottom Right</strong>)
+            </figcaption>
           </p>
         </div>
 
@@ -390,7 +397,7 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is uses template from  <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. Licensed under a <a rel="license"
+            This website uses template from  <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. Licensed under a <a rel="license"
             href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
